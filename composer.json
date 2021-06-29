@@ -35,6 +35,6 @@
         ]
     },
     "license": "MIT",
-    "bin": ["busacador-cursos"]
+    "bin": ["buscador-cursos"]
 
 }
