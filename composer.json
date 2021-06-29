@@ -29,7 +29,12 @@
     "autoload": {
         "psr-4": {
             "Alura\\BuscadorDeCursos\\": "src/"
-        }
-    }
+        },
+        "files": [
+            "functions.php"
+        ]
+    },
+    "license": "MIT",
+    "bin": ["busacador-cursos"]
 
 }
