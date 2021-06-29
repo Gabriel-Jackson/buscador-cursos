@@ -1,0 +1,35 @@
+{
+    "name": "gabriel-jackson/buscador-cursos",
+    "description": "Pacote que busca os cursos do site da Alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Gabriel Christ da Silva",
+            "email": "gabrielchrists@gmail.com"
+        }
+    ],
+    "scripts": {
+        "cs": "phpcs --standard=PSR12 src/",
+        "phan": "phan --allow-polyfill-parser",
+        "check": [
+            "@phan",
+            "@cs"
+        ]
+    },
+    "scripts-descriptions": {
+        "check": "Roda as verificações do código. PHAN, PHPCS e PHPUNIT"
+    },
+
+    "require": {
+        "guzzlehttp/guzzle": "^7.3",
+        "symfony/dom-crawler": "^5.3",
+        "symfony/css-selector": "^5.3"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Alura\\BuscadorDeCursos\\": "src/"
+        }
+    }
+
+}
